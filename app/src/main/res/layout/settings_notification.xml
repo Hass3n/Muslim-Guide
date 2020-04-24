@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:background="@color/divider_color_light"
+    >
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:orientation="vertical"
+		android:padding="20dp">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				style="@style/labelColumn"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/fajr"
+					android:textColor="@color/background_text_color" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/sunrise"
+					android:textColor="@color/background_text_color" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/dhuhr"
+					android:textColor="@color/background_text_color" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/asr"
+					android:textColor="@color/background_text_color" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/maghrib"
+					android:textColor="@color/background_text_color" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="fill_vertical"
+					android:text="@string/ishaa"
+					android:textColor="@color/background_text_color" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<Spinner
+					android:id="@+id/notification_fajr"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+
+				<Spinner
+					android:id="@+id/notification_sunrise"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+
+				<Spinner
+					android:id="@+id/notification_dhuhr"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+
+				<Spinner
+					android:id="@+id/notification_asr"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+
+				<Spinner
+					android:id="@+id/notification_maghrib"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+
+				<Spinner
+					android:id="@+id/notification_ishaa"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<include
+			layout="@layout/buttons_save_reset"
+			 />
+	</LinearLayout>
+</ScrollView>

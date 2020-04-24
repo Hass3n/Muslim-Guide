@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/reset_settings"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondery"
+        android:text="@string/reset"
+        android:textColor="@color/background_text_color" />
+
+    <Button
+        android:id="@+id/save_settings"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/colorSecondery"
+        android:text="@string/save"
+        android:textColor="@color/background_text_color" />
+</LinearLayout>
